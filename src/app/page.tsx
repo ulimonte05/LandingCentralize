@@ -58,7 +58,7 @@ export default function Ej() {
               <a href="https://cal.com/umontenegro" target="_blank" rel="noopener noreferrer" className="block w-full h-full">Agendar Demo</a>
             </button>
             <button className="w-full sm:w-auto px-6 py-3 md:px-7 md:py-3 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full text-white text-base md:text-lg font-medium">
-              <a href="#" target="_blank" rel="noopener noreferrer" className="block w-full h-full text-white">Habla con Juancito IA</a>
+              <a href="wa.me/541158961046" target="_blank" rel="noopener noreferrer" className="block w-full h-full text-white">Habla con Juancito IA</a>
             </button>
           </div>
         </div>
