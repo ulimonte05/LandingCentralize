@@ -34,7 +34,7 @@ export const metadata = {
     siteName: 'Centralize',
     images: [
       {
-        url: '/og-image.jpg',
+        url: './images/logo.png',
         width: 1200,
         height: 630,
         alt: 'Centralize - Agentes de IA Humanizados',
@@ -47,7 +47,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Centralize | Agentes de IA Humanizados',
     description: 'Automatiza tu negocio con agentes de IA humanizados. Soluciones para WhatsApp, Instagram, Facebook y Telegram.',
-    images: ['/twitter-image.jpg'],
+    images: ['./images/logo.png'],
     creator: '@centralize',
   },
   robots: {
@@ -63,11 +63,11 @@ export const metadata = {
   },
   icons: {
     icon: [
-      { url: '/logo.ico', type: 'image/x-icon' },
-      { url: '/logo.ico', type: 'image/x-icon' },
+      { url: './images/logo.ico', type: 'image/x-icon' },
+      { url: './images/logo.ico', type: 'image/x-icon' },
     ],
     apple: [
-      { url: '/logo.ico' },
+      { url: './images/logo.ico' },
     ],
   },
   manifest: '/manifest.json',
