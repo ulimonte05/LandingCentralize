@@ -1,0 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Opcional: Si usas Tailwind, puedes poner esto en tu archivo CSS principal donde importas Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+} 
