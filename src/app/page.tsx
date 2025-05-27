@@ -21,11 +21,8 @@ export default function Ej() {
           <img className="w-16 h-16 md:w-24 md:h-24" src="./images/logo.png" alt="Logo" />
           
           <div className="hidden md:flex items-center gap-8 text-white">
-            <a href="#" className="hover:opacity-80">Producto</a>
-            <a href="#" className="hover:opacity-80">Solucion</a>
-            <a href="#" className="hover:opacity-80">Clientes</a>
-            <a href="#" className="hover:opacity-80">Precios</a>
-            <a href="#" className="hover:opacity-80">Nosotros</a>
+            <a href="#features" className="hover:opacity-80">Soluciones</a>
+            <a href="#pricing" className="hover:opacity-80">Precios</a>
           </div>
 
           <button className="px-7 py-3 bg-white rounded-full text-lg font-semibold">
@@ -77,15 +74,15 @@ export default function Ej() {
           Confian en nuestra tecnologia:
         </h2>
         <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 px-4">
-          <img className="w-24 h-24 sm:w-28 md:w-32 lg:w-36" src="./images/google.png" alt="Client" />
+          <img className="w-24 h-auto sm:w-28 md:w-32 lg:w-36" src="./images/google.png" alt="Client" />
           <img className="h-12 sm:h-14 md:h-16 lg:h-20" src="./images/microsoft.png" alt="Client" />
-          <img className="w-24 h-24 sm:w-28 md:w-32 lg:w-36" src="./images/whatsapp.png" alt="Client" />
-          <img className="w-24 h-24 sm:w-28 md:w-32 lg:w-36" src="./images/meta.png" alt="Client" />
+          <img className="w-24 h-auto sm:w-28 md:w-32 lg:w-36" src="./images/whatsapp.png" alt="Client" />
+          <img className="w-24 h-auto sm:w-28 md:w-32 lg:w-36" src="./images/meta.png" alt="Client" />
         </div>
       </div>
 
       {/* Features Section */}
-      <div className={`w-full bg-gray-950 py-16 md:py-24 px-4 transition-all duration-1000 ease-out ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: isMounted ? '300ms' : '0ms' }}>
+      <div id="features" className={`w-full bg-gray-950 py-16 md:py-24 px-4 transition-all duration-1000 ease-out ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: isMounted ? '300ms' : '0ms' }}>
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6 md:mb-8">
             Trabaja Inteligente.<br/>
@@ -150,7 +147,7 @@ export default function Ej() {
       </div>
 
       {/* Pricing Section */}
-      <div className={`py-16 md:py-24 px-4 transition-all duration-1000 ease-out ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: isMounted ? '400ms' : '0ms' }}>
+      <div id="pricing" className={`py-16 md:py-24 px-4 transition-all duration-1000 ease-out ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: isMounted ? '400ms' : '0ms' }}>
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12">
           <div className={`bg-gradient-to-br from-black to-neutral-500 rounded-3xl p-8 sm:p-10 md:p-12 flex flex-col transition-all duration-1000 ease-out ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: isMounted ? '500ms' : '0ms' }}>
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-8 md:mb-10">Servicio Autonomo</h3>
