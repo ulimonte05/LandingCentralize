@@ -22,21 +22,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
       changeFrequency: 'yearly', // 'always', 'hourly', 'daily', 'weekly', 'monthly', 'yearly', 'never'
       priority: 1, // 0.0 to 1.0
-    },
-    {
-      url: 'https://centralize.dev/chatbot-whatsapp',
-      lastModified: new Date(), // O la fecha real de última modificación
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://centralize.dev/chatbot-whatsapp-exito-uno', // Tu página de caso de éxito
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    // ...añade aquí todas tus páginas importantes
-    // ...y las URLs dinámicas como los posts del blog
-    // ...blogPostsUrls,
+    }
   ];
 } 
