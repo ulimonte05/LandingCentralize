@@ -82,14 +82,11 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <meta name="google-site-verification" content="tu-codigo-de-verificacion" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body>
         {children}
-        <script id="dhws-errorTracker" src="/dhws-error-tracker.js" defer></script>
-        <script id="dhws-elementInspector" src="/dhws-web-inspector.js" defer></script>
       </body>
     </html>
   );
