@@ -234,7 +234,7 @@ export default function ChatbotWhatsappPage() {
               {/* Usar Image de Next.js y un alt mejorado */}
               <Image 
                 className="w-full rounded-[40px]" // Ajustado a w-full para mejor flexibilidad con el padre
-                src="/images/chatbot-ia-illustration.png" // **¡REEMPLAZA ESTA IMAGEN!** Debe ser una ilustración relevante del chatbot o IA.
+                src="/images/messi.png" // **¡REEMPLAZA ESTA IMAGEN!** Debe ser una ilustración relevante del chatbot o IA.
                 alt="Ilustración conceptual de un robot o asistente digital con inteligencia artificial, simbolizando el chatbot de WhatsApp de Centralize"
                 width={800} // Ancho original de la imagen (ejemplo)
                 height={600} // Alto original de la imagen (ejemplo)

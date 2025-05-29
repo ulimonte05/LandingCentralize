@@ -233,7 +233,7 @@ export default function LandingPagePrincipal() {
             <div className={`hidden md:block transition-all duration-1000 ease-out ${isMounted ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`} style={{ transitionDelay: isMounted ? '500ms' : '0ms' }}>
               <Image 
                 className="w-full rounded-[40px] shadow-lg" 
-                src="/images/centralize-workflow.png" // **¡IMAGEN RELEVANTE DEL FLUJO DE TRABAJO!**
+                src="/images/messi.png" // **¡IMAGEN RELEVANTE DEL FLUJO DE TRABAJO!**
                 alt="Flujo de trabajo de Centralize mostrando la creación de cuenta, activación de productos y escala de operaciones con IA"
                 width={800} // Ancho en píxeles de la imagen original
                 height={600} // Alto en píxeles de la imagen original
