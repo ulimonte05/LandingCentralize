@@ -30,7 +30,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     },
     {
-      url: 'https://centralize.dev/caso-exito-inmobiliario-grupo-vento-ia-tokko', // Tu página de caso de éxito
+      url: 'https://centralize.dev/chatbot-whatsapp-exito-uno', // Tu página de caso de éxito
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
