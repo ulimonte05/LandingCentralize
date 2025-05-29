@@ -28,7 +28,7 @@ export const metadata = {
   openGraph: {
     title: 'Caso de Éxito: Grupo Vento Vende Proyectos Enteros con IA, Tokko CRM y Adinco Net | Centralize',
     description: 'Descubre cómo Grupo Vento transformó sus ventas inmobiliarias, vendiendo proyectos completos mediante la IA de Centralize integrada con Tokko CRM y el soporte de Adinco Net. ¡Resultados reales!',
-    url: 'https://www.centralize.dev/casos-de-exito/grupo-vento', // **¡IMPORTANTE: Reemplazar con la URL canónica real de esta página!**
+    url: 'https://www.centralize.dev/chatbot-whatsapp-exito-uno', // **¡IMPORTANTE: Reemplazar con la URL canónica real de esta página!**
     siteName: 'Centralize',
     images: [
       {
@@ -49,7 +49,7 @@ export const metadata = {
     images: ['https://www.centralize.dev/clients/x.png'], // Misma imagen que Open Graph
   },
   alternates: { // Añadir canonical URL
-    canonical: 'https://www.centralize.dev/casos-de-exito/grupo-vento', // **URL canónica de esta página**
+    canonical: 'https://www.centralize.dev/chatbot-whatsapp-exito-uno', // **URL canónica de esta página**
   },
 };
 
@@ -118,7 +118,7 @@ export default function CasoExitoGrupoVentoPage() {
             </a>
           </Link>
           <button className="px-7 py-3 bg-white rounded-full text-lg font-semibold">
-            <a href="https://platform.centralize.dev/dashboard" target="_blank" rel="noopener noreferrer" className="block w-full h-full">Acceder a Plataforma Centralize</a>
+            <a href="https://accounts.platform.centralize.dev/sign-in?redirect_url=https%3A%2F%2Fdev.platform.centralize.dev%2Fonboarding" target="_blank" rel="noopener noreferrer" className="block w-full h-full">Acceder a Plataforma Centralize</a>
           </button>
         </nav>
         <div className={`max-w-5xl mx-auto text-center flex flex-col items-center transition-all duration-1000 ease-out `}>

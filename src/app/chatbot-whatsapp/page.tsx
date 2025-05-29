@@ -130,7 +130,7 @@ export default function ChatbotWhatsappPage() {
           </div>
 
           <button className="px-7 py-3 bg-white rounded-full text-lg font-semibold">
-            <a href="https://platform.centralize.dev/dashboard" target="_blank" rel="noopener noreferrer" className="block w-full h-full">Ingresar a Centralize</a>
+            <a href="https://accounts.platform.centralize.dev/sign-in?redirect_url=https%3A%2F%2Fdev.platform.centralize.dev%2Fonboarding" target="_blank" rel="noopener noreferrer" className="block w-full h-full">Ingresar a Centralize</a>
           </button>
         </nav>
 

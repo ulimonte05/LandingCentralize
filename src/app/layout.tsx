@@ -24,7 +24,7 @@ export const metadata = {
   alternates: {
     canonical: '/',
     languages: {
-      'es-ES': '/es',
+      'es-ES': '/',
     },
   },
   openGraph: {
