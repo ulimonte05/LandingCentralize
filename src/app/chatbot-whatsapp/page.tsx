@@ -14,7 +14,7 @@ export const metadata = {
     siteName: 'Centralize',
     images: [
       {
-        url: 'https://www.centralize.dev/images/centralize-whatsapp-bot-interface.png', // URL de la imagen principal del hero, debe ser pública
+        url: 'https://www.centralize.dev/images/messi.png', // URL de la imagen principal del hero, debe ser pública
         width: 1200,
         height: 630,
         alt: 'Plataforma de chatbot para WhatsApp con IA de Centralize',

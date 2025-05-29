@@ -32,7 +32,7 @@ export const metadata = {
     siteName: 'Centralize',
     images: [
       {
-        url: 'https://www.centralize.dev/images/caso-exito-grupo-vento-hero.png', // **URL pública de la imagen principal del hero**
+        url: 'https://www.centralize.dev/clients/x.png', // **URL pública de la imagen principal del hero**
         width: 1200,
         height: 630,
         alt: 'Grupo Vento vendiendo proyectos inmobiliarios completos con Centralize IA y Tokko CRM',
@@ -46,7 +46,7 @@ export const metadata = {
     title: 'Caso de Éxito: Grupo Vento Vende Proyectos Enteros con IA, Tokko CRM y Adinco Net | Centralize',
     description: 'Descubre cómo Grupo Vento transformó sus ventas inmobiliarias, vendiendo proyectos completos mediante la IA de Centralize integrada con Tokko CRM y el soporte de Adinco Net. ¡Resultados reales!',
     creator: '@CentralizeDev', // Si tienen un handle de Twitter
-    images: ['https://www.centralize.dev/images/caso-exito-grupo-vento-hero.png'], // Misma imagen que Open Graph
+    images: ['https://www.centralize.dev/clients/x.png'], // Misma imagen que Open Graph
   },
   alternates: { // Añadir canonical URL
     canonical: 'https://www.centralize.dev/casos-de-exito/grupo-vento', // **URL canónica de esta página**
@@ -82,13 +82,13 @@ export default function CasoExitoGrupoVentoPage() {
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.centralize.dev/casos-de-exito/grupo-vento" // **URL canónica de esta página**
+      "@id": "https://www.centralize.dev/chatbot-whatsapp-exito-uno" // **URL canónica de esta página**
     },
     // Añadir entidades mencionadas para mayor contexto y SEO semántico
     "mentions": [
-      { "@type": "Organization", "name": "Grupo Vento", "url": "https://www.grupovento.com.ar/" }, // Si tienen una URL
-      { "@type": "SoftwareApplication", "name": "Tokko CRM", "url": "https://www.tokkocrm.com/" }, // Si tienen una URL
-      { "@type": "Organization", "name": "Adinco Net", "url": "https://www.adinconet.com.ar/" } // Si tienen una URL
+      { "@type": "Organization", "name": "Grupo Vento", "url": "https://www.grupovento.cl/" }, // Si tienen una URL
+      { "@type": "SoftwareApplication", "name": "Tokko Broker", "url": "https://www.tokkobroker.com/" }, // Si tienen una URL
+      { "@type": "SoftwareApplication", "name": "Adinco Net", "url": "https://www.adinco.net/" } // Si tienen una URL
     ]
   };
 
@@ -149,10 +149,10 @@ export default function CasoExitoGrupoVentoPage() {
           <section className="mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 border-b-2 border-blue-500 pb-2">El Gigante Inmobiliario <span className="text-blue-600">Grupo Vento</span> y su Desafío Monumental</h2>
             <p className="text-lg text-gray-700">
-              <span className="font-semibold">Grupo Vento</span>, un nombre consolidado en el desarrollo de proyectos inmobiliarios de gran envergadura, se enfrentaba al colosal reto de comercializar desarrollos completos de cientos de unidades. La gestión tradicional de leads, la atención al cliente y el seguimiento a través de su <span className="font-semibold text-blue-600">CRM Inmobiliario Tokko</span>, aunque eficientes, necesitaban un impulso tecnológico para escalar al ritmo de sus ambiciones. Los principales obstáculos para este gigante del <Link href="/industrias/inmobiliarias" className="text-blue-600 hover:underline" >sector inmobiliario</Link> incluían:
+              <span className="font-semibold">Grupo Vento</span>, un nombre consolidado en el desarrollo de proyectos inmobiliarios de gran envergadura, se enfrentaba al colosal reto de comercializar desarrollos completos de cientos de unidades. La gestión tradicional de leads, la atención al cliente y el seguimiento a través de su <span className="font-semibold text-blue-600">CRM Inmobiliario Tokko</span>, aunque eficientes, necesitaban un impulso tecnológico para escalar al ritmo de sus ambiciones. Los principales obstáculos para este gigante del sector inmobiliario incluían:
             </p>
             <ul className="list-disc list-inside text-gray-700 space-y-2 mt-4 pl-4">
-              <li>Generación masiva y constante de leads cualificados para diversos perfiles de compradores y tipos de unidades, optimizando la <Link href="/publicidad-ia-inmobiliaria" className="text-blue-600 hover:underline" >publicidad IA inmobiliaria</Link>.</li>
+              <li>Generación masiva y constante de leads cualificados para diversos perfiles de compradores y tipos de unidades, optimizando la publicidad IA inmobiliaria.</li>
               <li>Capacidad de respuesta inmediata y personalizada 24/7 a través de múltiples canales, especialmente <span className="font-semibold">WhatsApp</span>, mediante un <Link href="/chatbot-whatsapp" className="text-blue-600 hover:underline" >chatbot WhatsApp inmobiliario</Link>.</li>
               <li>Calificación precisa y ágil de prospectos para optimizar el tiempo del equipo de ventas y la <span className="font-semibold">automatización de marketing inmobiliario</span>.</li>
               <li>Coordinación eficiente del agendamiento de visitas a showrooms y propiedades modelo, sincronizado con <span className="font-semibold text-blue-600">Tokko CRM</span>.</li>
@@ -164,7 +164,7 @@ export default function CasoExitoGrupoVentoPage() {
           <section className="mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 border-b-2 border-blue-500 pb-2">La Solución Integral Centralize: IA, <span className="text-blue-600">Tokko CRM</span> y <span className="text-blue-600">Adinco Net</span> en Sinergia</h2>
             <p className="text-lg text-gray-700">
-              Grupo Vento eligió <Link href="/" className="text-blue-600 hover:underline" >Centralize</Link> para orquestar una transformación digital completa. La solución de <Link href="/ia-para-inmobiliarias" className="text-blue-600 hover:underline" >IA para inmobiliarias</Link> se centró en tres pilares fundamentales:
+              Grupo Vento eligió <Link href="/" className="text-blue-600 hover:underline" >Centralize</Link> para orquestar una transformación digital completa. La solución de <Link href="/" className="text-blue-600 hover:underline" >IA para inmobiliarias</Link> se centró en tres pilares fundamentales:
             </p>
             {/* ¡NUEVA IMAGEN! Ilustración de la sinergia */}
             <div className="my-8 text-center">
@@ -182,13 +182,13 @@ export default function CasoExitoGrupoVentoPage() {
                 <p className="text-gray-600">Se implementó un ecosistema de <span className="font-semibold">IA para inmobiliarias</span> diseñado para:</p>
                 <ul className="list-disc list-inside text-gray-600 space-y-1 mt-2 pl-4">
                   <li><span className="font-semibold text-blue-600">Chatbot WhatsApp Inmobiliario Inteligente:</span> Capaz de atender miles de consultas simultáneas, responder FAQs complejas sobre los proyectos, pre-calificar leads según criterios definidos por Grupo Vento, y derivar prospectos calientes al equipo comercial. <Link href="/chatbot-whatsapp" className="text-blue-600 hover:underline" >Más sobre nuestro chatbot de WhatsApp.</Link></li>
-                  <li><span className="font-semibold">Motor de IA para Publicidad Inmobiliaria:</span> Optimización dinámica de campañas en Google Ads y Meta, ajustando presupuestos y segmentaciones en tiempo real para atraer leads de alta calidad a un costo óptimo. <Link href="/publicidad-ia-inmobiliaria" className="text-blue-600 hover:underline" >Descubre cómo la IA revoluciona la publicidad.</Link></li>
+                  <li><span className="font-semibold">Motor de IA para Publicidad Inmobiliaria:</span> Optimización dinámica de campañas en Google Ads y Meta, ajustando presupuestos y segmentaciones en tiempo real para atraer leads de alta calidad a un costo óptimo. <Link href="/chatbot-whatsapp" className="text-blue-600 hover:underline" >Descubre cómo la IA revoluciona la publicidad.</Link></li>
                   <li><span className="font-semibold">Sistema de Agendamiento IA:</span> Integrado al <span className="font-semibold text-blue-600">chatbot WhatsApp</span> y a los calendarios del equipo de ventas, permitiendo a los prospectos agendar visitas automáticamente, mejorando la eficiencia.</li>
                 </ul>
               </div>
               <div>
                 <h3 className="text-2xl font-semibold text-gray-700 mb-3">2. Integración Profunda con <span className="text-blue-600">Tokko CRM</span></h3>
-                <p className="text-gray-600">La clave fue una integración bidireccional sin fisuras con <span className="font-semibold text-blue-600">Tokko CRM</span>, el corazón de las operaciones de Grupo Vento. Esta robusta <Link href="/integraciones/tokko-crm" className="text-blue-600 hover:underline" >integración de Centralize con Tokko CRM</Link> permitió:</p>
+                <p className="text-gray-600">La clave fue una integración bidireccional sin fisuras con <span className="font-semibold text-blue-600">Tokko CRM</span>, el corazón de las operaciones de Grupo Vento. Esta robusta integración de Centralize con Tokko CRM permitió:</p>
                 <ul className="list-disc list-inside text-gray-600 space-y-1 mt-2 pl-4">
                   <li>Creación y actualización automática de prospectos y clientes en <span className="font-semibold text-blue-600">Tokko</span> (accesible vía `tokko broker ingresar` o `tokko ingreso` por el equipo).</li>
                   <li>Registro de todas las interacciones del <span className="font-semibold text-blue-600">chatbot WhatsApp</span> y la IA en la ficha del cliente en <span className="font-semibold text-blue-600">Tokko</span>, creando un <span className="font-semibold">CRM inmobiliario con IA</span>.</li>
@@ -198,7 +198,7 @@ export default function CasoExitoGrupoVentoPage() {
               </div>
               <div>
                 <h3 className="text-2xl font-semibold text-gray-700 mb-3">3. Infraestructura Confiable y Escalable con <span className="text-blue-600">Adinco Net</span></h3>
-                <p className="text-gray-600">Para asegurar la máxima disponibilidad y rendimiento de las soluciones de IA, la infraestructura proporcionada o gestionada a través de <span className="font-semibold text-blue-600">Adinco Net</span> garantizó la conectividad, seguridad y capacidad de procesamiento necesarias para manejar el alto volumen de datos e interacciones generadas por las campañas y el <span className="font-semibold text-blue-600">chatbot inmobiliario</span> de Grupo Vento, asegurando la escalabilidad de nuestras <Link href="/ia-para-inmobiliarias" className="text-blue-600 hover:underline" >soluciones de IA</Link>.</p>
+                <p className="text-gray-600">Para asegurar la máxima disponibilidad y rendimiento de las soluciones de IA, la infraestructura proporcionada o gestionada a través de <span className="font-semibold text-blue-600">Adinco Net</span> garantizó la conectividad, seguridad y capacidad de procesamiento necesarias para manejar el alto volumen de datos e interacciones generadas por las campañas y el <span className="font-semibold text-blue-600">chatbot inmobiliario</span> de Grupo Vento, asegurando la escalabilidad de nuestras <Link href="/" className="text-blue-600 hover:underline" >soluciones de IA</Link>.</p>
               </div>
             </div>
           </section>
@@ -213,7 +213,7 @@ export default function CasoExitoGrupoVentoPage() {
               </div>
               <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
                 <h4 className="text-xl font-semibold text-blue-600 mb-2">"Villas del Parque": Lista de Espera</h4>
-                <p className="text-gray-600">Para su más reciente lanzamiento de 150 casas, la <span className="font-semibold">IA de Centralize</span> generó tal demanda que se alcanzó el cupo de preventa en semanas, creando una lista de espera gestionada por el <span className="font-semibold text-blue-600">chatbot</span> y <span className="font-semibold text-blue-600">Tokko CRM</span>, lo que demuestra la potencia de nuestra <Link href="/automatizacion-ventas" className="text-blue-600 hover:underline" >automatización de ventas</Link>.</p>
+                <p className="text-gray-600">Para su más reciente lanzamiento de 150 casas, la <span className="font-semibold">IA de Centralize</span> generó tal demanda que se alcanzó el cupo de preventa en semanas, creando una lista de espera gestionada por el <span className="font-semibold text-blue-600">chatbot</span> y <span className="font-semibold text-blue-600">Tokko CRM</span>, lo que demuestra la potencia de nuestra <Link href="/" className="text-blue-600 hover:underline" >automatización de ventas</Link>.</p>
               </div>
             </div>
             <p className="text-lg text-gray-700 mt-4">Otros resultados clave incluyen:</p>
@@ -248,7 +248,7 @@ export default function CasoExitoGrupoVentoPage() {
           <section className="text-center py-10 bg-gray-100 rounded-lg">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Transforma tus Ventas Inmobiliarias como <span className="text-blue-600">Grupo Vento</span> con Centralize</h2>
             <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-              ¿Estás listo para llevar tus ventas de proyectos inmobiliarios al siguiente nivel? Descubre cómo la <Link href="/ia-para-inmobiliarias" className="text-blue-600 hover:underline" >IA de Centralize</Link>, integrada con tu CRM (como <span className="font-semibold text-blue-600">Tokko</span>) y apoyada por una infraestructura sólida, puede ayudarte a alcanzar resultados extraordinarios en la <span className="font-semibold">comercialización de propiedades</span>.
+              ¿Estás listo para llevar tus ventas de proyectos inmobiliarios al siguiente nivel? Descubre cómo la <Link href="/chatbot-whatsapp" className="text-blue-600 hover:underline" >IA de Centralize</Link>, integrada con tu CRM (como <span className="font-semibold text-blue-600">Tokko</span>) y apoyada por una infraestructura sólida, puede ayudarte a alcanzar resultados extraordinarios en la <span className="font-semibold">comercialización de propiedades</span>.
             </p>
             <a 
               href="https://cal.com/umontenegro" 
