@@ -80,7 +80,11 @@ export default function LandingPage() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white px-8 py-4">
+              <Button 
+                size="lg" 
+                className="bg-red-600 hover:bg-red-700 text-white px-8 py-4"
+                onClick={() => window.open('https://calendly.com/holacentralize/30min', '_blank')}
+              >
                 QUIERO CONOCER EL SISTEMA DE IA
               </Button>
             </div>
@@ -230,7 +234,11 @@ export default function LandingPage() {
           <p className="text-xl mb-8 opacity-90">
             Agenda una demo gratuita y descubre cómo nuestro sistema de IA puede revolucionar tus ventas inmobiliarias
           </p>
-          <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold">
+          <Button 
+            size="lg" 
+            className="bg-white text-red-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold"
+            onClick={() => window.open('https://calendly.com/holacentralize/30min', '_blank')}
+          >
             AGENDAR DEMO GRATUITA
           </Button>
         </div>
