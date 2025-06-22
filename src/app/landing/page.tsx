@@ -6,41 +6,41 @@ import { CheckCircle, Users, Target, TrendingUp, Star } from "lucide-react"
 export default function LandingPage() {
   const teamMembers = [
     {
-      name: "Alejandro Navarro",
-      role: "CEO & Fundador",
+      name: "Lorenzo Miranda",
+      role: "Vicepresidente gremial de la Cámara Chilena de la Construcción",
       description:
-        "Más de 15 años de experiencia en consultoría empresarial y desarrollo de estrategias de crecimiento.",
-      image: "/placeholder.svg?height=200&width=200",
+        "'Al principio fue un proyecto mas de muchos en los que ya hemos tratado de innovar, luego se termino transformando en un proyecto con multiples desarrollos que terminaron transformando todo nuestro proceso de ventas. Estamos muy contentos con la forma de trabajar de Ulises y Tobias.'",
+      image: "/clients/x.png",
     },
     {
-      name: "Evelyn García",
-      role: "Directora de Operaciones",
-      description: "Especialista en optimización de procesos y gestión de equipos de alto rendimiento.",
-      image: "/placeholder.svg?height=200&width=200",
+      name: "Pedro Diacarma",
+      role: "Ceo y cofundador en AtHome Grupo Inmobiliario",
+      description: "'Siempre hemos sido entusiasta en la tecnologia pero la verdad que hoy si es rentable aplicarla. Claro que recomendaria y es porque las cuentas terminan cerrando🤪😂. Muy contentos con el trabajo y la atencion de los chicos'",
+      image: "/clients/athome.png",
     },
     {
-      name: "Carolina Serrano",
-      role: "Consultora Senior",
-      description: "Experta en transformación digital y estrategias de marketing para empresas B2B.",
-      image: "/placeholder.svg?height=200&width=200",
+      name: "Jordi Martinez",
+      role: "Ceo y fundador en Own Legacy",
+      description: "'Si recomendaria porque es simple, estando de este lado, uno teme de conceptos tan alejados de su comprension, pero Ulises siempre nos hizo entender todo de forma facil. Una vez que instalamos el sistema fue cuestion de horas para comenzar a ver resultados, seguiremos innovando!🤖💪'",
+      image: "/clients/own.png",
     },
     {
-      name: "Andrés Durán",
-      role: "Analista Financiero",
-      description: "Especializado en análisis de inversiones y planificación financiera estratégica.",
-      image: "/placeholder.svg?height=200&width=200",
+      name: "Bernardo Ramael",
+      role: "Director general en Tibesa Real Estate",
+      description: "'Si, gracias. Seguiremos trabajando si los resultados siguen siendo estos, trabajan muy bien y son profesionales. El ultimo mes fue el que mas agendas tuvimos y seria imposible sin un agente de IA'",
+      image: "/clients/tibesa.png",
+    },
+     {
+      name: "Jean Pierre Hidalgo",
+      role: "Gerente General en Convive Grupo Inmobiliario",
+      description: "'Trabajamos con ellos hace ya mas de un año y medio ,  era una necesidad para nosotros poder atender a los clientes a tiempo y el area de marketing no daba abasto. Julio (aqui Jean menciona el nombre de su agente) hoy se encarga de todo el proceso de calificacion y seguimientos y nunca mas volvimos a recbir quejas de clientes, ademas cada mes cumplimos con los objetivos de ventas, cosa que antes hubiera sido imposible.'",
+      image: "/clients/convive.png",
     },
     {
-      name: "Santiago Padilla",
-      role: "Consultor de Tecnología",
-      description: "Líder en implementación de soluciones tecnológicas y automatización de procesos.",
-      image: "/placeholder.svg?height=200&width=200",
-    },
-    {
-      name: "Julián Rodríguez",
-      role: "Director de Ventas",
-      description: "Experto en desarrollo de canales de venta y estrategias de crecimiento comercial.",
-      image: "/placeholder.svg?height=200&width=200",
+      name: "Tadas Vaineikis",
+      role: "Ceo y fundador en Marvic Properties",
+      description: "'Recomiendo.  Estoy contento con los resultados en general, nunca pense ver los resultados que estamos teniendo sinceramente, no tenia expectativas pero si me sorprendi... Los seguimientos han sido clave y las metricas tambien.'",
+      image: "/clients/marvic.png",
     },
   ]
 
@@ -53,44 +53,17 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      {/* Header */}
-      <header className="border-b border-gray-800">
-         {/*<div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-red-600 rounded"></div>
-            <span className="text-xl font-bold">YAX</span>
-          </div>
-          <nav className="hidden md:flex space-x-8">
-            <a href="#inicio" className="hover:text-red-400 transition-colors">
-              Inicio
-            </a>
-            <a href="#servicios" className="hover:text-red-400 transition-colors">
-              Servicios
-            </a>
-            <a href="#equipo" className="hover:text-red-400 transition-colors">
-              Equipo
-            </a>
-            <a href="#contacto" className="hover:text-red-400 transition-colors">
-              Contacto
-            </a>
-          </nav>
-        </div>*/}
-      </header>
-
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              CÓMO CUALQUIER ASESOR O DESARROLLADOR
+              COMO CUALQUIER PROYECTO INMOBILIARIO
               <br />
-              <span className="text-red-400">PUEDE HACER CRECER SU NEGOCIO</span>
+              <span className="text-red-400">PUEDE VENDER MÁS GASTANDO MENOS</span>
+              <br />
+              GRACIAS A LOS SISTEMAS CON IA
             </h1>
-            <p className="text-xl mb-8 text-gray-300">
-              ¿SIN VOLVER A PERDER EL TIEMPO EN CURSOS Y
-              <br />
-              SEAS RENTABLE?
-            </p>
 
             <div className="relative max-w-2xl mx-auto mb-8 border-2 border-red-800 rounded-lg overflow-hidden rounded-xl">
               <div className="aspect-video bg-gray-800 rounded-lg overflow-hidden">
@@ -108,14 +81,7 @@ export default function LandingPage() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white px-8 py-4">
-                QUIERO CONOCER NUESTRA METODOLOGÍA
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4"
-              >
-                RESULTADOS REALES
+                QUIERO CONOCER EL SISTEMA DE IA
               </Button>
             </div>
           </div>
@@ -126,19 +92,19 @@ export default function LandingPage() {
       <section id="servicios" className="py-20 px-4 bg-gray-800">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">NUESTRA SOLUCIÓN</h2>
-            <p className="text-xl text-gray-300">Metodología probada para escalar tu negocio de consultoría</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">NUESTRO SISTEMA</h2>
+            <p className="text-xl text-gray-300">Sistema de IA especializado para empresas inmobiliarias</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <Card className="bg-gray-900 border-gray-700 text-center p-8">
               <CardContent className="pt-6">
                 <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Target className="w-8 h-8 text-white" />
+                  <Users className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-white">ESTRATEGIA PERSONALIZADA</h3>
+                <h3 className="text-xl font-bold mb-4 text-white">AGENTE DE IA</h3>
                 <p className="text-gray-300">
-                  Desarrollamos una estrategia única para tu negocio basada en tu experiencia y mercado objetivo.
+                  Desarrollamos un agente de IA entrenado como el mejor vendedor de tu empresa, basándonos en tus criterios. Hacemos que acceda a tu base de propiedades y calendario, para luego incorporarlo en tu WhatsApp.
                 </p>
               </CardContent>
             </Card>
@@ -148,9 +114,9 @@ export default function LandingPage() {
                 <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <TrendingUp className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-white">CRECIMIENTO ESCALABLE</h3>
+                <h3 className="text-xl font-bold mb-4 text-white">SEGUIMIENTOS CON IA</h3>
                 <p className="text-gray-300">
-                  Implementamos sistemas y procesos que te permiten crecer sin depender únicamente de tu tiempo.
+                  Te brindamos una bonita interfaz donde puedes configurar seguimientos masivos o programar para cada lead. Cada seguimiento es personalizado y basado en la conversación con el usuario.
                 </p>
               </CardContent>
             </Card>
@@ -158,25 +124,26 @@ export default function LandingPage() {
             <Card className="bg-gray-900 border-gray-700 text-center p-8">
               <CardContent className="pt-6">
                 <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-white" />
+                  <Target className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-white">ACOMPAÑAMIENTO CONTINUO</h3>
+                <h3 className="text-xl font-bold mb-4 text-white">MÉTRICAS CON IA</h3>
                 <p className="text-gray-300">
-                  Te acompañamos en cada paso del proceso con mentorías personalizadas y soporte constante.
+                  Te brindamos métricas personalizadas con IA para que puedas optimizar el rendimiento. Podrás saber cuáles son los proyectos más consultados, las consultas más típicas, y cualquier métrica clave de tu empresa.
                 </p>
               </CardContent>
             </Card>
           </div>
 
           <div className="mt-16 max-w-3xl mx-auto">
-            <h3 className="text-2xl font-bold mb-8 text-center">PROCESO COMPROBADO PASO A PASO</h3>
+            <h3 className="text-2xl font-bold mb-8 text-center">CÓMO FUNCIONA NUESTRO SISTEMA</h3>
             <div className="space-y-4">
               {[
-                "Análisis completo de tu situación actual y definición de objetivos claros",
-                "Desarrollo de tu propuesta de valor única y posicionamiento en el mercado",
-                "Creación de sistemas de captación de clientes automatizados",
-                "Implementación de procesos de venta y cierre efectivos",
-                "Escalamiento del negocio con equipos y sistemas optimizados",
+                "Análisis completo de las interacciones existentes con clientes y definición de comunicación del agente",
+                "Definición de objetivos del agente y entendimiento del proceso de ventas",
+                "Desarrollo de funciones como base de datos, calendario y deepresearch",
+                "Implementación dentro de WhatsApp e inicio de sesión en Centralize",
+                "Configuración de seguimientos automáticos para cada lead",
+                "Desarrollo de métricas personalizadas",
                 "Monitoreo y optimización continua para maximizar resultados",
               ].map((step, index) => (
                 <div key={index} className="flex items-start space-x-3">
@@ -184,6 +151,9 @@ export default function LandingPage() {
                   <p className="text-gray-300">{step}</p>
                 </div>
               ))}
+              <div className="flex justify-center rounded-lg overflow-hidden">
+                <Image className=" border-2 border-red-800" src="/images/centralize.png" alt="Dashboard" width={1000} height={1000} />
+              </div>
             </div>
           </div>
         </div>
@@ -193,9 +163,9 @@ export default function LandingPage() {
       <section id="equipo" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">NUESTRO EQUIPO DE EXPERTOS</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Testimonios de nuestros clientes</h2>
             <p className="text-xl text-gray-300">
-              Profesionales con experiencia comprobada en el crecimiento de negocios
+            Empresas inmobiliarias con desarrollos inmobiliarios activos
             </p>
           </div>
 
@@ -204,13 +174,13 @@ export default function LandingPage() {
               <Card key={index} className="bg-gray-800 border-gray-700 overflow-hidden">
                 <CardContent className="p-0">
                   <div className={`flex flex-col md:flex-row ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}>
-                    <div className="md:w-1/3">
+                    <div className="md:w-1/3 flex justify-center items-center">
                       <Image
                         src={member.image || "/placeholder.svg"}
                         alt={member.name}
-                        width={300}
-                        height={300}
-                        className="w-full h-64 md:h-full object-cover"
+                        width={150}
+                        height={150}
+                        className="w-auto h-16 md:h-24 rounded-lg object-cover"
                       />
                     </div>
                     <div className="md:w-2/3 p-8 flex flex-col justify-center">
@@ -232,7 +202,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Partners Section */}
+      {/* Partners Section 
       <section className="py-16 px-4 bg-gray-800">
         <div className="container mx-auto">
           <div className="text-center mb-12">
@@ -251,17 +221,17 @@ export default function LandingPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section>*/}
 
       {/* CTA Section */}
       <section className="py-20 px-4 bg-red-600">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">¿LISTO PARA TRANSFORMAR TU NEGOCIO?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">¿LISTO PARA VENDER MÁS CON IA?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Agenda una consulta gratuita y descubre cómo podemos ayudarte a crecer
+            Agenda una demo gratuita y descubre cómo nuestro sistema de IA puede revolucionar tus ventas inmobiliarias
           </p>
           <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold">
-            AGENDAR CONSULTA GRATUITA
+            AGENDAR DEMO GRATUITA
           </Button>
         </div>
       </section>
