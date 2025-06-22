@@ -1,7 +1,7 @@
 'use client';
 
 import React, { ReactNode } from 'react';
-import Button from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 
 interface CardFeature {
   text: string;
@@ -50,7 +50,7 @@ const Card: React.FC<CardProps> = ({
       
       <div className="mt-auto">
         <Button 
-          variant={variant === 'dark' ? 'white' : 'primary'} 
+          variant={variant === 'dark' ? 'outline' : 'default'} 
           className="w-full rounded-full"
           onClick={onButtonClick}
         >
