@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
+import Head from "next/head"
 import { useState, useEffect } from "react"
 
 export default function PrivacyPolicyPage() {
@@ -12,7 +13,11 @@ export default function PrivacyPolicyPage() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <>
+      <Head>
+        <meta property="fb:app_id" content="9374616242616417" />
+      </Head>
+      <div className="min-h-screen bg-gray-900 text-white">
 
         <nav className={`flex items-center justify-between py-8 px-8 transition-all duration-1000 ease-out ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5'}`}>
           <Link href="/" legacyBehavior>
@@ -224,7 +229,8 @@ export default function PrivacyPolicyPage() {
             ← Volver al inicio
           </a>
         </div>
+              </div>
       </div>
-    </div>
+    </>
   )
 } 
