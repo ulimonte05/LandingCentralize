@@ -16,6 +16,9 @@ export default function PrivacyPolicyPage() {
     <>
       <Head>
         <meta property="fb:app_id" content="9374616242616417" />
+        {/* Meta Pixel Code */}
+
+        {/* End Meta Pixel Code */}
       </Head>
       <div className="min-h-screen bg-gray-900 text-white">
 
