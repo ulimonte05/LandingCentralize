@@ -1,12 +1,49 @@
 'use client'
 
 import Image from "next/image"
-import Head from "next/head"
+import { useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, Users, Target, TrendingUp, Star } from "lucide-react"
 
 export default function LandingPage() {
+  // Asegurar que Meta Pixel se cargue y detecte la landing
+  useEffect(() => {
+    // Agregar noscript img para garantizar tracking
+    const noscriptImg = document.createElement('img');
+    noscriptImg.height = 1;
+    noscriptImg.width = 1;
+    noscriptImg.style.display = 'none';
+    noscriptImg.src = 'https://www.facebook.com/tr?id=1762004548074021&ev=PageView&noscript=1';
+    document.body.appendChild(noscriptImg);
+    
+    // Forzar eventos de Meta Pixel si existe
+    const checkAndTrack = () => {
+      if (typeof (window as any).fbq === 'function') {
+        // Track eventos específicos de landing
+        (window as any).fbq('track', 'ViewContent', {
+          content_name: 'Landing Page Sistema IA Inmobiliario',
+          content_category: 'Landing Page',
+          content_type: 'product'
+        });
+        
+        (window as any).fbq('track', 'CompleteRegistration', {
+          content_name: 'Landing Page View'
+        });
+        
+        console.log('Meta Pixel events fired successfully');
+      } else {
+        console.log('Meta Pixel fbq function not found');
+      }
+    };
+    
+    // Ejecutar inmediatamente y después de un delay
+    setTimeout(checkAndTrack, 100);
+    setTimeout(checkAndTrack, 1000);
+    setTimeout(checkAndTrack, 3000);
+    
+  }, []);
+
   const teamMembers = [
     {
       name: "Lorenzo Miranda",
@@ -34,7 +71,7 @@ export default function LandingPage() {
       image: "/clients/tibesa.png",
     },
      {
-      name: "Jean Pierre Hidalgo",
+        name: "Jean Pierre Hidalgo",
       role: "Gerente General en Convive Grupo Inmobiliario",
       description: "'Trabajamos con ellos hace ya mas de un año y medio ,  era una necesidad para nosotros poder atender a los clientes a tiempo y el area de marketing no daba abasto. Julio (aqui Jean menciona el nombre de su agente) hoy se encarga de todo el proceso de calificacion y seguimientos y nunca mas volvimos a recbir quejas de clientes, ademas cada mes cumplimos con los objetivos de ventas, cosa que antes hubiera sido imposible.'",
       image: "/clients/convive.png",
@@ -55,38 +92,7 @@ export default function LandingPage() {
   ]
 
   return (
-    <>
-      <Head>
-        <meta property="fb:app_id" content="9374616242616417" />
-        {/* Meta Pixel Code */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              !function(f,b,e,v,n,t,s)
-              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-              n.queue=[];t=b.createElement(e);t.async=!0;
-              t.src=v;s=b.getElementsByTagName(e)[0];
-              s.parentNode.insertBefore(t,s)}(window, document,'script',
-              'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '1762004548074021');
-              fbq('track', 'PageView');
-            `
-          }}
-        />
-        <noscript>
-          <img 
-            height="1" 
-            width="1" 
-            style={{display: 'none'}}
-            src="https://www.facebook.com/tr?id=1762004548074021&ev=PageView&noscript=1"
-            alt=""
-          />
-        </noscript>
-        {/* End Meta Pixel Code */}
-      </Head>
-      <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto text-center">
@@ -119,7 +125,16 @@ export default function LandingPage() {
               <Button 
                 size="lg" 
                 className="bg-red-600 hover:bg-red-700 text-white px-8 py-4"
-                onClick={() => window.open('https://calendly.com/holacentralize/30min', '_blank')}
+                onClick={() => {
+                  // Track conversión de botón principal
+                  if (typeof (window as any).fbq === 'function') {
+                    (window as any).fbq('track', 'Lead', {
+                      content_name: 'Botón Principal CTA',
+                      content_category: 'Demo Request'
+                    });
+                  }
+                  window.open('https://calendly.com/holacentralize/30min', '_blank');
+                }}
               >
                 QUIERO CONOCER EL SISTEMA DE IA
               </Button>
@@ -273,7 +288,19 @@ export default function LandingPage() {
           <Button 
             size="lg" 
             className="bg-white text-red-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold"
-            onClick={() => window.open('https://calendly.com/holacentralize/30min', '_blank')}
+            onClick={() => {
+              // Track conversión de botón secundario
+              if (typeof (window as any).fbq === 'function') {
+                (window as any).fbq('track', 'Lead', {
+                  content_name: 'Botón Demo Gratuita',
+                  content_category: 'Demo Request'
+                });
+                (window as any).fbq('track', 'Schedule', {
+                  content_name: 'Calendario Demo'
+                });
+              }
+              window.open('https://calendly.com/holacentralize/30min', '_blank');
+            }}
           >
             AGENDAR DEMO GRATUITA
           </Button>
@@ -299,6 +326,5 @@ export default function LandingPage() {
         </div>
       </footer>
     </div>
-    </>
   )
 }
